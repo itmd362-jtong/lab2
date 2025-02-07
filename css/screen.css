@@ -41,7 +41,7 @@ input[type="submit"]:hover {
 }
 
 /* Mobile */
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   form {
     padding: 25px;
     max-width: 450px;
