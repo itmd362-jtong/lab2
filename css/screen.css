@@ -1,11 +1,11 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: Montserrat, Georgia, serif;
   padding: 20px;
-  background-color: white;
+  background-image: linear-gradient(to right, #25625A, #AA6039); /* gradient blue to orange */
 }
 
 form {
-  max-width: 600px;
+  max-width: none;
   margin: 0 auto;
   padding: 20px;
   background-color: #f5f5f5;
@@ -19,6 +19,7 @@ form {
 label {
   display: block;
   margin-bottom: 5px;
+  font-size: 1.3em;
 }
 
 input {
@@ -27,33 +28,46 @@ input {
   border: 1px solid #ddd;
   border-radius: 4px;
   box-sizing: border-box;
+  box-shadow: 0px 4px 8px #003827; /* blue glow drop shadow for boxes */
 }
 
 input[type="submit"] {
-  background-color: #4CAF50;
+  background-color: #70A897;
   color: white;
   padding: 10px;
   border: none;
   cursor: pointer;
+  max-width: 10%;
 }
 
 input[type="submit"]:hover {
-  background-color: #45a049;
+  background-color: #468C77;
 }
 
+h1 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 15px;
+  text-align: center;
+  text-shadow: 2px 2px 6px #FFC8AA; /* drop shadow with orange glow */
+}
 /* Mobile */
 @media screen and (max-width: 480px) {
   form {
     padding: 25px;
     max-width: 450px;
     background-color: #f5f5f5;
-  }
+}
   
   body {
-    background-color: white;
-  }
+    background-color: #25725A;
+}
   
   input {
     padding: 10px;
-  }
+}
+  
+  input[type="submit"] {
+  max-width: 100%;
+ }
 }
